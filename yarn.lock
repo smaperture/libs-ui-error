@@ -1690,9 +1690,11 @@
     react-native "0.64.3"
     react-native-paper "^4.12.0"
 
-"@smaperture/layout@https://github.com/smaperture/ui-layout#v0.1.2":
-  version "0.1.2"
-  resolved "https://github.com/smaperture/ui-layout#237ff4aeff2728b3f77f4f03f55c0219c68f294b"
+"@smaperture/layout@https://github.com/smaperture/ui-layout#v0.1.3":
+  version "0.1.3"
+  resolved "https://github.com/smaperture/ui-layout#c8b6a4a1ae183b38e560a7170a92553595eaf2cc"
+  dependencies:
+    react-native "0.64.3"
 
 "@testing-library/jest-native@^4.0.4":
   version "4.0.4"
