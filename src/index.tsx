@@ -15,12 +15,7 @@ const DisplayError: React.FC<{
   title?: string;
 }> = ({ children, icon, style, theme, title }) => {
   const { colors } = theme;
-
-  const appearance = StyleSheet.create({
-    text: {
-      color: colors.error,
-    },
-  });
+  const styles = createStyles(theme);
 
   return (
     <View style={[
@@ -34,17 +29,17 @@ const DisplayError: React.FC<{
         style={styles.icon}
       />
       {title && <Title style={[
+        styles.text,
         styles.title,
-        appearance.text,
       ]}>{title}</Title>}
-      <Subheading style={appearance.text}>
+      <Subheading style={styles.text}>
         {children}
       </Subheading>
     </View>
   );
 };
 
-const styles = StyleSheet.create({
+const createStyles = (theme: Theme) => StyleSheet.create({
   container: {
     alignItems: 'center',
     flex: 1,
@@ -53,6 +48,9 @@ const styles = StyleSheet.create({
   },
   icon: {
     marginBottom: EM,
+  },
+  text: {
+    color: theme.colors.error,
   },
   title: {
     marginBottom: EM,
