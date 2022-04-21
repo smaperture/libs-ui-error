@@ -1680,9 +1680,9 @@
   dependencies:
     "@sinonjs/commons" "^1.7.0"
 
-"@smaperture/fa-icon@https://github.com/smaperture/ui-faicon#v0.1.1":
+"@smaperture/fa-icon@https://github.com/smaperture/ui-faicon#v0.1.2":
   version "0.1.1"
-  resolved "https://github.com/smaperture/ui-faicon#fe4387671bb3cfc91ba1ce79e3b222835007710f"
+  resolved "https://github.com/smaperture/ui-faicon#84cffd55b7e41edf454666a1c7bebaea3162f4e5"
   dependencies:
     "@fortawesome/react-fontawesome" "^0.1.18"
     "@fortawesome/react-native-fontawesome" "^0.2.7"
@@ -1690,9 +1690,9 @@
     react-native "0.64.3"
     react-native-paper "^4.12.0"
 
-"@smaperture/layout@https://github.com/smaperture/ui-layout#v0.1.3":
+"@smaperture/layout@https://github.com/smaperture/ui-layout#v0.1.4":
   version "0.1.3"
-  resolved "https://github.com/smaperture/ui-layout#c8b6a4a1ae183b38e560a7170a92553595eaf2cc"
+  resolved "https://github.com/smaperture/ui-layout#b5297bd569c9c4e600a034c314b327ed4982539c"
   dependencies:
     react-native "0.64.3"
 

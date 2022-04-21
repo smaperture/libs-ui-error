@@ -12,14 +12,13 @@
   ],
   "scripts": {
     "build": "bob build",
-    "prepare": "bob build",
     "test": "jest"
   },
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^6.1.1",
     "@fortawesome/pro-light-svg-icons": "^6.1.1",
-    "@smaperture/layout": "https://github.com/smaperture/ui-layout#v0.1.3",
-    "@smaperture/fa-icon": "https://github.com/smaperture/ui-faicon#v0.1.1",
+    "@smaperture/layout": "https://github.com/smaperture/ui-layout#v0.1.4",
+    "@smaperture/fa-icon": "https://github.com/smaperture/ui-faicon#v0.1.2",
     "react": "17.0.1",
     "react-native": "0.64.3",
     "react-native-paper": "^4.12.0"
