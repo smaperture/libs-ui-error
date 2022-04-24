@@ -3,7 +3,7 @@ import React, { ReactNode } from 'react';
 import { EM } from '@smaperture/layout';
 import { Subheading, Title, withTheme } from 'react-native-paper';
 import { IconDefinition } from '@fortawesome/fontawesome-common-types';
-import { StyleProp, StyleSheet, View, ViewStyle } from 'react-native';
+import { ScrollView, StyleProp, StyleSheet, ViewStyle } from 'react-native';
 import { Theme } from 'react-native-paper/lib/typescript/types';
 import { faCircleExclamation } from '@fortawesome/pro-light-svg-icons';
 
@@ -18,10 +18,10 @@ const DisplayError: React.FC<{
   const styles = createStyles(theme);
 
   return (
-    <View style={[
-      styles.container,
-      style,
-    ]}>
+    <ScrollView contentContainerStyle={
+      [styles.container,
+        style,
+      ]}>
       <FontAwesomeIcon
         color={colors.error}
         icon={icon || faCircleExclamation}
@@ -35,7 +35,7 @@ const DisplayError: React.FC<{
       <Subheading style={styles.text}>
         {children}
       </Subheading>
-    </View>
+    </ScrollView>
   );
 };
 
@@ -43,7 +43,7 @@ const createStyles = (theme: Theme) => StyleSheet.create({
   container: {
     alignItems: 'center',
     flex: 1,
-    justifyContent: 'center',
+    // justifyContent: 'center',
     margin: EM * 2,
   },
   icon: {
